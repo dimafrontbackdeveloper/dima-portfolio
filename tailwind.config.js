@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {import('Tailwindcss').Config} */
 import portfolio from './src/portfolio'
 
 module.exports = {

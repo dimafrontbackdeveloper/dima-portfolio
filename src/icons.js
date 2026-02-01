@@ -11,14 +11,18 @@ import {
     faLinkedin,
     faMedium,
     faStackOverflow,
-    faXTwitter
+    faTelegram,
 } from '@fortawesome/free-brands-svg-icons'
+
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
+
 
 /* add icons to the library */
 library.add(
     faGithub,
     faLinkedin,
+    faTelegram,
     faMedium,
     faStackOverflow,
-    faXTwitter
+    faPhone
 )

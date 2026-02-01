@@ -52,7 +52,7 @@
 							</a>
 						</li>
 						<li
-							v-show="mediumLink"
+							v-show="telegramLink"
 							:class="[
 								'transition-all motion-reduce:transition-none duration-500 delay-[150ms]',
 								showLanding
@@ -60,9 +60,9 @@
 									: '-translate-y-4 opacity-0',
 							]"
 						>
-							<a :href="mediumLink" target="_blank">
+							<a :href="telegramLink" target="_blank">
 								<font-awesome-icon
-									icon="fa-brands fa-medium"
+									icon="fa-brands fa-telegram"
 									class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"
 								></font-awesome-icon>
 							</a>
@@ -84,7 +84,7 @@
 							</a>
 						</li>
 						<li
-							v-show="xTwitterLink"
+							v-show="phoneLink"
 							:class="[
 								'transition-all motion-reduce:transition-none duration-500 delay-[200ms]',
 								showLanding
@@ -92,9 +92,9 @@
 									: '-translate-y-4 opacity-0',
 							]"
 						>
-							<a :href="xTwitterLink" target="_blank">
+							<a :href="phoneLink" target="_blank">
 								<font-awesome-icon
-									icon="fa-brands fa-x-twitter"
+									icon="fa-solid fa-phone"
 									class="h-8 w-8 md:h-12 md:w-12 text-black transition ease-out hover:-translate-y-1 motion-reduce:hover:translate-y-0 duration-300 dark:text-slate-300"
 								></font-awesome-icon>
 							</a>
@@ -127,24 +127,6 @@
 							:content="portfolio.contact"
 							:transitions="portfolio.transitions"
 						/>
-
-						<footer class="hidden text-center md:block mb-5">
-							<p>
-								🚀 Designed & Created by
-								<a
-									href="https://github.com/mimaishel"
-									class="hover:text-link-color"
-									target="_blank"
-									>Dmytro Chorniy</a
-								>
-							</p>
-							<a
-								href="https://github.com/mimaishel/webdev_portfolio"
-								class="hover:text-link-color"
-								target="_blank"
-								>Code available on Github 👾</a
-							>
-						</footer>
 					</div>
 				</div>
 				<div
@@ -161,23 +143,6 @@
 						📍 Based in {{ portfolio.greeting.basedLocation }}
 					</p>
 				</div>
-				<footer class="block text-center text-sm md:hidden order-last mb-5">
-					<p>
-						🚀 Designed & Created by
-						<a
-							href="https://maximshelepov.com"
-							class="hover:text-link-color"
-							target="_blank"
-							>Dmytro Chorniy</a
-						>
-					</p>
-					<a
-						href="https://github.com/mimaishel/webdev_portfolio"
-						class="hover:text-link-color"
-						target="_blank"
-						>Code available on Github 👾</a
-					>
-				</footer>
 			</div>
 		</div>
 	</div>
@@ -214,9 +179,9 @@ onMounted(() => {
 // Social Media Links
 const githubLink = portfolio.socialMediaLinks.github
 const linkedinLink = portfolio.socialMediaLinks.linkedin
-const mediumLink = portfolio.socialMediaLinks.medium
+const telegramLink = portfolio.socialMediaLinks.telegram
 const stackoverflowLink = portfolio.socialMediaLinks.stackoverflow
-const xTwitterLink = portfolio.socialMediaLinks.xtwitter
+const phoneLink = portfolio.socialMediaLinks.phone
 
 const splashScreen = () => {
 	if (portfolio.splashScreen) {
@@ -240,7 +205,7 @@ const landingTransition = () => {
 }
 
 const useDark = () => {
-	// credit: https://tailwindcss.com/docs/dark-mode#supporting-system-preference-and-manual-selection
+	// credit: https://Tailwindcss.com/docs/dark-mode#supporting-system-preference-and-manual-selection
 	if (
 		localStorage.theme === 'dark' ||
 		(!('theme' in localStorage) &&
