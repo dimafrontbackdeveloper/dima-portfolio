@@ -25,7 +25,7 @@ const greeting = {
     // og: "I'm a computer science senior with hefty experience in app development. Previously worked as a web developer at my university, where I built tools to support both students and educators. Currently, I'm developing an educational AI tool aimed at redefining how college students interact with AI.",
     message: "I'm a passionate and results-driven full-stack developer who loves solving complex problems and delivering high-quality products.    Detail-oriented, goal-focused and always striving for excellence - I enjoy the process of turning ideas into something people actually use and appreciate.",
     basedLocation: "Vinnytsia, Ukraine",
-    resumeLink: "https://drive.google.com/file/d/1BEiPuAOCQPWc1RVN5Bn_7KyxhR0HL_bv/view?usp=sharing", // recommended: google drive file share link (change to "anyone on the internet can view")
+    resumeLink: "https://docs.google.com/document/d/1SbrVYkxU0aK6aWhISwFKnjWNkry46shPNHI654Dv7Pw/edit?usp=sharing", // recommended: google drive file share link (change to "anyone on the internet can view")
     logo: {
         link: "images/initials.png", // use relative path from  parent directory -> ex: images/image.ext
         custom: true // takes precedence over image logo and allows for custom HTML logo (./components/Navbar.vue)
