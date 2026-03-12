@@ -63,6 +63,8 @@ const about = {
         "Postman",
         "Strapi,Heleket",
         "npm,pnpm,yarn",
+        "PHP",
+        "WordPress"
     ],
     photo1Link: "images/portrait1.jpeg",
     photo2Link: "images/portrait2.jpg",
